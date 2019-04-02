@@ -32,6 +32,10 @@ body {
   height: 30px;
   right: 8px;
   top: 8px;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
 }
 
 .bm-burger-bars {
