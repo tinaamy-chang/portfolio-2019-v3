@@ -18,7 +18,7 @@ const ThumbnailContainer = styled('div')`
   transition: all 0.2s ease;
 
   &:hover {
-    transform: translateY(-6px);
+    transform: translateY(-2px);
     box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.7);
   }
 `;
