@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { slide as Menu } from 'react-burger-menu';
+import { Link, withPrefix } from 'gatsby';
 
 const burgerBarClassName = 'burger-bar-class';
 const burgerButtonClassName = 'burger-button-class';
@@ -36,7 +37,7 @@ export default props => {
           Designs&etc
         </a>
 
-        <a className="menu-item" href="/react">
+        <a className="menu-item" href={withPrefix('files/TChang_Resume.pdf')}>
           Resume
         </a>
       </Menu>

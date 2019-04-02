@@ -60,9 +60,7 @@ const NavigationBar = ({ noLeftPadding }) => (
       Designs&etc
     </NavBarObjects>
 
-    <ResumeLink href={withPrefix('files/Tina-Chang_Resume.pdf')}>
-      Resume
-    </ResumeLink>
+    <ResumeLink href={withPrefix('files/TChang_Resume.pdf')}>Resume</ResumeLink>
   </NavBar>
 );
 
