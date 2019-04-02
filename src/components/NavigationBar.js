@@ -35,6 +35,7 @@ const NavBarObjects = styled(Link)`
   }
 `;
 const ResumeLink = styled('a').attrs({ target: '_blank' })`
+  height: 1.6em;
   &:link,
   &:active,
   &:visited {
@@ -43,7 +44,9 @@ const ResumeLink = styled('a').attrs({ target: '_blank' })`
   }
 
   &:hover {
-    text-decoration: underline;
+    background-color: white;
+    color: #c4797e;
+    transition: color 0.2s;
   }
 `;
 
