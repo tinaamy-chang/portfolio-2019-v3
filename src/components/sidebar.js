@@ -12,6 +12,7 @@ const StyleWrapper = styled('div').attrs({
   .${burgerButtonClassName} {
     top: 8px;
     right: 8px;
+    max-height: 3em;
     @media screen and (min-width: 600px) {
       display: none;
     }
