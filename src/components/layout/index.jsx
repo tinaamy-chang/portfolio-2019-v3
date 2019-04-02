@@ -39,12 +39,10 @@ const Layout = ({ children, dynamic }) => (
           </style>
           <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,Symbol" />
         </Helmet>
-        <div style={{ width: '100vw', maxWidth: '100%' }} id="app-container">
-          <Menu right outerContainerId="app-container" pageWrapId="page-wrap" />
-          <main style={{ width: '100vw', maxWidth: '100%' }} id="page-wrap">
-            {children}
-          </main>
-        </div>
+        <Menu right outerContainerId="__gatsby" pageWrapId="page-wrap" />
+        <main style={{ width: '100vw', maxWidth: '100%' }} id="page-wrap">
+          {children}
+        </main>
       </>
     )}
   />
