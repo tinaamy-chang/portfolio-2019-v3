@@ -10,7 +10,6 @@ import greatthumb from '../images/selectedprojects/thumbnails/optimizedthumbnail
 import moorthumb from '../images/selectedprojects/thumbnails/optimizedthumbnails/5moor.jpg';
 import piecesthumb from '../images/selectedprojects/thumbnails/optimizedthumbnails/6piecesofher.jpg';
 
-import Layout from '../components/layout';
 import Menu from '../components/sidebar';
 import NavigationBar from '../components/NavigationBar';
 import Thumbnail from '../components/Thumbnail';

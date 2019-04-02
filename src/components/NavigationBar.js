@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/layout';
 import { Link, withPrefix } from 'gatsby';
 
 const NavBar = styled('ul')`

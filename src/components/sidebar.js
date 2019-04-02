@@ -7,12 +7,6 @@ const burgerBarClassName = 'burger-bar-class';
 const burgerButtonClassName = 'burger-button-class';
 const StyleWrapper = styled('div')`
   .${burgerButtonClassName} {
-    height: 2rem;
-    width: 2rem;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-
     @media screen and (min-width: 600px) {
       display: none;
     }
