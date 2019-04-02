@@ -5,7 +5,7 @@ import { Link, withPrefix } from 'gatsby';
 
 export default props => {
   return (
-    <Menu right={props.right}>
+    <Menu {...props}>
       <a className="menu-item" href="/">
         Home
       </a>

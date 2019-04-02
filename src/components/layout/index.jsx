@@ -3,9 +3,15 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import Menu from '../../components/sidebar';
 import './layout.css';
 
 const Container = styled('div')`
+  width: 100vw;
+  max-width: 100%;
+`;
+
+const Inner = styled('main')`
   width: 100vw;
   max-width: 100%;
 `;
@@ -43,7 +49,14 @@ const Layout = ({ children, dynamic }) => (
           </style>
           <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,Symbol" />
         </Helmet>
-        <Container>{children}</Container>
+        <Container id="outer-container">
+          <Menu
+            right
+            outerContainerId="outer-container"
+            pageWrapId="page-wrap"
+          />
+          <Inner id="page-wrap">{children}</Inner>
+        </Container>
       </>
     )}
   />

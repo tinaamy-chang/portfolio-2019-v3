@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import Menu from '../components/sidebar';
 import NavigationBar from '../components/NavigationBar';
 import DesignsLightbox from '../components/DesignsLightbox';
 
@@ -21,7 +20,6 @@ const Bottom = styled('div')`
 const Designs = () => {
   return (
     <div>
-      <Menu right />
       <TopNav>
         <NavigationBar />
       </TopNav>
