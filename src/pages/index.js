@@ -70,8 +70,8 @@ const ProjectThumbnails = styled('img')`
 const IndexPage = () => {
   return (
     <div>
+      <Menu right />
       <div>
-        <Menu right />
         <TopNav>
           <PictureHolder>
             <Picture alt="Picture of Tina" src={profile} />
