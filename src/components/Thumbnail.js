@@ -34,12 +34,12 @@ const ThumbnailHover = styled('div')`
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
+  font-size: 2.5em;
 
   &:hover {
     opacity: 1;
     background: ${props => props.hoverBackground};
     color: white;
-    font-size: 2.5em;
     padding: 1em;
     text-align: center;
     border-radius: 0.1em;
