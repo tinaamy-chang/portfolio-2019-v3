@@ -6,7 +6,7 @@ const Image = styled('img')`
   margin: 0;
   padding: 0;
   display: block;
-  max-width: 500px;
+  max-width: 100%;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0.2em;
 `;
