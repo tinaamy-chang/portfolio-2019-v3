@@ -6,16 +6,6 @@ import styled from 'styled-components';
 import Menu from '../../components/sidebar';
 import './layout.css';
 
-const Container = styled('div')`
-  width: 100vw;
-  max-width: 100%;
-`;
-
-const Inner = styled('main')`
-  width: 100vw;
-  max-width: 100%;
-`;
-
 const Layout = ({ children, dynamic }) => (
   <StaticQuery
     query={graphql`
@@ -49,10 +39,12 @@ const Layout = ({ children, dynamic }) => (
           </style>
           <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,Symbol" />
         </Helmet>
-        <Container id="app-container">
+        <div style={{ width: '100vw', maxWidth: '100%' }} id="app-container">
           <Menu right outerContainerId="app-container" pageWrapId="page-wrap" />
-          <Inner id="page-wrap">{children}</Inner>
-        </Container>
+          <main style={{ width: '100vw', maxWidth: '100%' }} id="page-wrap">
+            {children}
+          </main>
+        </div>
       </>
     )}
   />
