@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/layout';
+import withOmelette from '../withOmelette';
 
 const Container = styled('div')`
   display: flex;
@@ -10,12 +10,10 @@ const Container = styled('div')`
 `;
 
 const NotFoundPage = () => (
-  <Layout>
-    <Container>
-      <h1>Not Found</h1>
-      <p>This page doesn't exist... yet.</p>
-    </Container>
-  </Layout>
+  <Container>
+    <h1>Not Found</h1>
+    <p>This page doesn't exist... yet.</p>
+  </Container>
 );
 
-export default NotFoundPage;
+export default withOmelette(NotFoundPage);

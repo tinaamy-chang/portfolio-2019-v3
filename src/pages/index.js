@@ -9,10 +9,11 @@ import greatthumb from '../images/selectedprojects/thumbnails/optimizedthumbnail
 import moorthumb from '../images/selectedprojects/thumbnails/optimizedthumbnails/5moor.jpg';
 import piecesthumb from '../images/selectedprojects/thumbnails/optimizedthumbnails/6piecesofher.jpg';
 
-import Menu from '../components/sidebar';
 import NavigationBar from '../components/NavigationBar';
 import Thumbnail from '../components/Thumbnail';
 import TopNav from '../components/TopNav';
+
+import withOmelette from '../withOmelette';
 
 const PictureHolder = styled('div')`
   max-width: 27em;
@@ -62,29 +63,26 @@ const ProjectSection = styled('div')`
 const IndexPage = () => {
   return (
     <div>
-      <Menu right />
-      <div>
-        <TopNav>
-          <PictureHolder>
-            <Picture alt="Picture of Tina" src={profile} />
-          </PictureHolder>
-          <IntroInfo>
-            <IntroHeading>Hello, I am Tina Chang</IntroHeading>
-            <p>
-              Visual Communications Design
-              <br />
-              San Francisco State University Spring 2019
-            </p>
-            <p>
-              Passionate about UI, UX, Branding, and Graphics. I design for work
-              and leisure.
-              <br />
-              Adobe Illustrator is my partner in crime.
-            </p>
-            <NavigationBar noLeftPadding />
-          </IntroInfo>
-        </TopNav>
-      </div>
+      <TopNav>
+        <PictureHolder>
+          <Picture alt="Picture of Tina" src={profile} />
+        </PictureHolder>
+        <IntroInfo>
+          <IntroHeading>Hello, I am Tina Chang</IntroHeading>
+          <p>
+            Visual Communications Design
+            <br />
+            San Francisco State University Spring 2019
+          </p>
+          <p>
+            Passionate about UI, UX, Branding, and Graphics. I design for work
+            and leisure.
+            <br />
+            Adobe Illustrator is my partner in crime.
+          </p>
+          <NavigationBar noLeftPadding />
+        </IntroInfo>
+      </TopNav>
       <ProjectSection>
         <Thumbnail
           src={pathwaysthumb}
@@ -133,4 +131,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default withOmelette(IndexPage);

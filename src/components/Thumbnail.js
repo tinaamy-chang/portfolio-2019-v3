@@ -6,7 +6,8 @@ const Image = styled('img')`
   margin: 0;
   padding: 0;
   display: block;
-  max-width: 500px;
+  width: 500px;
+  max-width: 100%;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0.2em;
 `;
@@ -14,9 +15,10 @@ const Image = styled('img')`
 const ThumbnailContainer = styled('div')`
   position: relative;
   margin: 1em;
+  transition: all 0.2s ease;
 
   &:hover {
-    transform: translateY(-6px);
+    transform: translateY(-2px);
     box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.7);
   }
 `;
@@ -31,12 +33,13 @@ const ThumbnailHover = styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
+  font-size: 2.5em;
 
   &:hover {
     opacity: 1;
     background: ${props => props.hoverBackground};
     color: white;
-    font-size: 2.5em;
     padding: 1em;
     text-align: center;
     border-radius: 0.1em;

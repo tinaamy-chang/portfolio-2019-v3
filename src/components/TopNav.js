@@ -7,16 +7,8 @@ const TopNav = styled('div')`
   border-bottom: 1px solid Gainsboro;
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
-  background: #be93c5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #c4797e #dbbfb3
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #c4797e,
-    #dbbfb3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #be93c5;
+  background: linear-gradient(to right, #c4797e, #dbbfb3);
 
   @media only screen and (max-width: 1200px) {
     padding: 1.5em;

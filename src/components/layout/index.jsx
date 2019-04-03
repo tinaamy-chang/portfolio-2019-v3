@@ -3,15 +3,9 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import Header, { HEADER_HEIGHT } from './header';
+import './layout.css';
 
-const Container = styled('div')`
-  width: 100vw;
-  max-width: 100%;
-  margin-top: ${HEADER_HEIGHT}px;
-`;
-
-const Layout = ({ children, dynamic }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -44,15 +38,10 @@ const Layout = ({ children, dynamic }) => (
           </style>
           <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,Symbol" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Container>{children}</Container>
+        <main style={{ width: '100vw', maxWidth: '100%' }}>{children}</main>
       </>
     )}
   />
 );
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;

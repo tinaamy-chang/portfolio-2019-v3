@@ -5,8 +5,8 @@ import Menu from '../components/sidebar';
 import NavigationBar from '../components/NavigationBar';
 import DesignsLightbox from '../components/DesignsLightbox';
 
-import '../App.css';
 import TopNav from '../components/TopNav';
+import withOmelette from '../withOmelette';
 
 const Intro = styled('p')``;
 const IntroWrapper = styled('p')`
@@ -21,7 +21,6 @@ const Bottom = styled('div')`
 const Designs = () => {
   return (
     <div>
-      <Menu right />
       <TopNav>
         <NavigationBar />
       </TopNav>
@@ -39,4 +38,4 @@ const Designs = () => {
   );
 };
 
-export default Designs;
+export default withOmelette(Designs);
