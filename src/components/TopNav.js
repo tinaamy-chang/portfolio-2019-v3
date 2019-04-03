@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const TopNav = styled('div')`
@@ -19,7 +18,7 @@ const TopNav = styled('div')`
     #dbbfb3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  @media only screen and (max-width: 726px) {
+  @media only screen and (max-width: 1200px) {
     padding: 1.5em;
     display: flex;
   }

@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/layout';
 import Menu from '../components/sidebar';
 import NavigationBar from '../components/NavigationBar';
 import DesignsLightbox from '../components/DesignsLightbox';

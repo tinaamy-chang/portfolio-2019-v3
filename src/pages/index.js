@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import profile from '../images/profile/profile.jpg';
@@ -10,7 +9,6 @@ import greatthumb from '../images/selectedprojects/thumbnails/optimizedthumbnail
 import moorthumb from '../images/selectedprojects/thumbnails/optimizedthumbnails/5moor.jpg';
 import piecesthumb from '../images/selectedprojects/thumbnails/optimizedthumbnails/6piecesofher.jpg';
 
-import Layout from '../components/layout';
 import Menu from '../components/sidebar';
 import NavigationBar from '../components/NavigationBar';
 import Thumbnail from '../components/Thumbnail';
@@ -22,9 +20,10 @@ const PictureHolder = styled('div')`
   margin: 0em 0.5em 0em 4.1em;
   margin-bottom: 1px;
 
-  @media only screen and (max-width: 726px) {
-    margin: 0 0 1.5em 0;
+  @media only screen and (max-width: 1137px) {
+    margin: 0em 1em 1.5em 0;
     padding: 0;
+    max-width: 20em;
   }
 `;
 
@@ -36,7 +35,7 @@ const Picture = styled('img')`
   margin: 0;
   border-left: 4px solid white;
   border-right: 4px solid white;
-  @media only screen and (max-width: 726px) {
+  @media only screen and (max-width: 1180px) {
     border: 4px solid white;
     margin: 2em 0 1.5em 0;
     padding: 0;
@@ -58,13 +57,6 @@ const ProjectSection = styled('div')`
   justify-content: center;
   flex-wrap: wrap;
   padding: 3.5em 1em;
-`;
-
-const ProjectThumbnails = styled('img')`
-  margin: 0;
-  padding: 0;
-  display: block;
-  max-width: 550px;
 `;
 
 const IndexPage = () => {

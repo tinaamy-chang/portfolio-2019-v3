@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { slide as Menu } from 'react-burger-menu';
-import { Link, withPrefix } from 'gatsby';
+import { withPrefix } from 'gatsby';
 
 const burgerBarClassName = 'burger-bar-class';
 const burgerButtonClassName = 'burger-button-class';
