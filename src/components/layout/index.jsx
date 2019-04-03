@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import Menu from '../../components/sidebar';
 import './layout.css';
+import { HamburgerOmeletteProvider, Hamburger } from '../HamburgerOmelette';
+import Menu from '../sidebar';
 
 const Layout = ({ children, dynamic }) => (
   <StaticQuery
@@ -39,10 +40,13 @@ const Layout = ({ children, dynamic }) => (
           </style>
           <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,Symbol" />
         </Helmet>
-        <Menu right outerContainerId="__gatsby" pageWrapId="page-wrap" />
-        <main style={{ width: '100vw', maxWidth: '100%' }} id="page-wrap">
-          {children}
-        </main>
+        <HamburgerOmeletteProvider>
+          <main style={{ width: '100vw', maxWidth: '100%' }} id="page-wrap">
+            {children}
+          </main>
+          <Hamburger />
+          <Menu />
+        </HamburgerOmeletteProvider>
       </>
     )}
   />

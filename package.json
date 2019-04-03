@@ -13,7 +13,6 @@
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-plugin-typography": "^2.2.0",
     "react": "^16.5.1",
-    "react-burger-menu": "^2.6.5",
     "react-dom": "^16.5.1",
     "react-grid-gallery": "^0.5.4",
     "react-helmet": "^5.2.0",

@@ -1,22 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
-import { slide as Menu } from 'react-burger-menu';
 import { Link, withPrefix } from 'gatsby';
+import { Omelette } from './HamburgerOmelette';
+
+const MenuItemLink = styled(Link)`
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.2s;
+  font-size: 2rem;
+  margin-top: 1rem;
+`;
+
+const MenuItemA = MenuItemLink.withComponent('a');
 
 export default props => {
   return (
-    <Menu {...props}>
-      <a className="menu-item" href="/">
+    <Omelette {...props}>
+      <MenuItemLink className="menu-item" to="/">
         Home
-      </a>
+      </MenuItemLink>
 
-      <a className="menu-item" href="/designs">
+      <MenuItemLink className="menu-item" to="/designs">
         Designs&etc
-      </a>
+      </MenuItemLink>
 
-      <a className="menu-item" href={withPrefix('files/TChang_Resume.pdf')}>
-        Resume
-      </a>
-    </Menu>
+      <MenuItemA href={withPrefix('files/TChang_Resume.pdf')}>Resume</MenuItemA>
+    </Omelette>
   );
 };
