@@ -80,6 +80,16 @@ const fadeIn = keyframes`
   }
 `;
 
+const scaleIn = keyframes`
+  from {
+    transform: scale(1.3);
+  }
+
+  to {
+    transform: scale(1);
+  }
+`;
+
 const OmeletteContainer = styled('div')`
   position: fixed;
   top: 0;
@@ -93,6 +103,8 @@ const OmeletteContainer = styled('div')`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0.0001;
+  animation: ${fadeIn} 0.3s ease forwards;
 `;
 
 const OmeletteInner = styled('div')`
@@ -100,6 +112,8 @@ const OmeletteInner = styled('div')`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: scale(1.3);
+  animation: ${scaleIn} 0.3s ease forwards;
 `;
 
 const OmeletteClose = styled('button')`
