@@ -4,10 +4,8 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import './layout.css';
-import { HamburgerOmeletteProvider, Hamburger } from '../HamburgerOmelette';
-import Menu from '../sidebar';
 
-const Layout = ({ children, dynamic }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -40,20 +38,10 @@ const Layout = ({ children, dynamic }) => (
           </style>
           <script src="https://cdn.polyfill.io/v2/polyfill.js?features=default,Symbol" />
         </Helmet>
-        <HamburgerOmeletteProvider>
-          <main style={{ width: '100vw', maxWidth: '100%' }} id="page-wrap">
-            {children}
-          </main>
-          <Hamburger />
-          <Menu />
-        </HamburgerOmeletteProvider>
+        <main style={{ width: '100vw', maxWidth: '100%' }}>{children}</main>
       </>
     )}
   />
 );
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;

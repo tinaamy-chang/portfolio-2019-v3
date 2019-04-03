@@ -6,6 +6,7 @@ import NavigationBar from '../components/NavigationBar';
 import DesignsLightbox from '../components/DesignsLightbox';
 
 import TopNav from '../components/TopNav';
+import withOmelette from '../withOmelette';
 
 const Intro = styled('p')``;
 const IntroWrapper = styled('p')`
@@ -37,4 +38,4 @@ const Designs = () => {
   );
 };
 
-export default Designs;
+export default withOmelette(Designs);

@@ -14,6 +14,8 @@ import NavigationBar from '../components/NavigationBar';
 import Thumbnail from '../components/Thumbnail';
 import TopNav from '../components/TopNav';
 
+import withOmelette from '../withOmelette';
+
 const PictureHolder = styled('div')`
   max-width: 27em;
   padding: 0em 5em;
@@ -136,4 +138,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default withOmelette(IndexPage);

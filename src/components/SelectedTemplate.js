@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Menu from '../components/sidebar';
 import NavigationBar from '../components/NavigationBar';
 import TopNav from '../components/TopNav';
+import withOmelette from '../withOmelette';
 
 const ImageContainer = styled('div')``;
 
@@ -42,7 +43,6 @@ const SelectedTemplate = ({ images, name }) => {
   return (
     <div>
       <TopNav>
-        <Menu right />
         <NavigationBar />
       </TopNav>
       <Bottom>
@@ -58,4 +58,4 @@ const SelectedTemplate = ({ images, name }) => {
   );
 };
 
-export default SelectedTemplate;
+export default withOmelette(SelectedTemplate);

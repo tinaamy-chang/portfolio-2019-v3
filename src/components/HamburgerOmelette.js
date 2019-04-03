@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const OpenContext = React.createContext({
   open: false,
@@ -70,6 +70,16 @@ export const Hamburger = () => (
   </OpenContext.Consumer>
 );
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0.0001;
+  }
+
+  to {
+    opacity: 0.99;
+  }
+`;
+
 const OmeletteContainer = styled('div')`
   position: fixed;
   top: 0;
@@ -79,6 +89,13 @@ const OmeletteContainer = styled('div')`
   max-width: 100vw;
   z-index: 5000;
   background: linear-gradient(130deg, #c4797e, #dbbfb3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const OmeletteInner = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,8 +119,22 @@ export const Omelette = ({ children }) => (
     {({ open, toggle }) =>
       open && (
         <OmeletteContainer>
-          <OmeletteClose onClick={toggle}>×</OmeletteClose>
-          {children}
+          <OmeletteClose
+            onClick={e => {
+              e.stopPropagation();
+              toggle();
+            }}
+          >
+            ×
+          </OmeletteClose>
+          <OmeletteInner
+            onClick={e => {
+              e.stopPropagation();
+              toggle();
+            }}
+          >
+            {children}
+          </OmeletteInner>
         </OmeletteContainer>
       )
     }
