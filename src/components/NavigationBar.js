@@ -34,6 +34,7 @@ const NavBarObjects = styled(Link)`
   }
 `;
 const ResumeLink = styled('a').attrs({ target: '_blank' })`
+  margin-right: 5em;
   height: 1.6em;
   &:link,
   &:active,
@@ -63,6 +64,10 @@ const NavigationBar = ({ noLeftPadding }) => (
     </NavBarObjects>
 
     <ResumeLink href={withPrefix('files/TChang_Resume.pdf')}>Resume</ResumeLink>
+    <ResumeLink href={'https://github.com/tinaamy-chang'}>Github</ResumeLink>
+    <ResumeLink href={'https://www.linkedin.com/in/tinastunas/'}>
+      LinkedIn
+    </ResumeLink>
   </NavBar>
 );
 

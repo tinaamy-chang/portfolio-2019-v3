@@ -26,6 +26,10 @@ export default props => {
       </MenuItemLink>
 
       <MenuItemA href={withPrefix('files/TChang_Resume.pdf')}>Resume</MenuItemA>
+      <MenuItemA href="https://github.com/tinaamy-chang">Github</MenuItemA>
+      <MenuItemA href="https://www.linkedin.com/in/tinastunas/">
+        LinkedIn
+      </MenuItemA>
     </Omelette>
   );
 };
