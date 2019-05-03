@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SelectedTemplate from '../../components/SelectedTemplate';
+import SelectedTemplate from '../components/SelectedTemplate';
 
 import m1 from '../../images/selectedprojects/5Moor/OptimizedMoor/m1.jpg';
 import m2 from '../../images/selectedprojects/5Moor/OptimizedMoor/m2.jpg';
