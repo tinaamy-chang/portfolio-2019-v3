@@ -16,7 +16,7 @@ import TopNav from '../components/TopNav';
 import withOmelette from '../withOmelette';
 
 const PictureHolder = styled('div')`
-  max-width: 27em;
+  max-width: 29em;
   padding: 0em 5em;
   margin: 0em 0.5em 0em 4.1em;
   margin-bottom: 1px;
@@ -60,6 +60,14 @@ const ProjectSection = styled('div')`
   padding: 3.5em 1em;
 `;
 
+const GitHubLink = styled('a')`
+  text-decoration: none;
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const IndexPage = () => {
   return (
     <div>
@@ -72,13 +80,21 @@ const IndexPage = () => {
           <p>
             Visual Communications Design
             <br />
-            San Francisco State University Spring 2019
+            San Francisco State University 2019
           </p>
           <p>
             Passionate about UI, UX, Branding, and Graphics. I design for work
             and leisure.
             <br />
             Adobe Illustrator is my partner in crime.
+          </p>
+          <p>
+            This website was developed using ReactJS & GithubJS.{' '}
+            <GitHubLink
+              href={'https://github.com/tinaamy-chang/tinastunas.com'}
+            >
+              Check out the code here.
+            </GitHubLink>
           </p>
           <NavigationBar noLeftPadding />
         </IntroInfo>
@@ -88,42 +104,42 @@ const IndexPage = () => {
           src={pathwaysthumb}
           hoverText="Pathways to Success"
           alt="Pathways to Success"
-          linkTo="selectedworks/pathwaystosuccess"
+          linkTo="pathwaystosuccess"
           hoverBackground="rgba(246,144,79,0.9)"
         />
         <Thumbnail
           src={bunlifethumb}
           hoverText="BunLife"
           alt="BunLife"
-          linkTo="selectedworks/bunlife"
+          linkTo="bunlife"
           hoverBackground="rgba(166,175,216,0.9)"
         />
         <Thumbnail
           src={leadthumb}
           hoverText="Lead Generation Panel"
           alt="Lead Generation Panel"
-          linkTo="selectedworks/leadgenerationpanel"
+          linkTo="leadgenerationpanel"
           hoverBackground="rgba(65,127,194,0.9)"
         />
         <Thumbnail
           src={greatthumb}
           hoverText="What Happened to the Great Barrier Reef?"
           alt="What Happened to the Great Barrier Reef?"
-          linkTo="selectedworks/whgbr"
+          linkTo="whgbr"
           hoverBackground="rgba(65,152,194,0.9)"
         />
         <Thumbnail
           src={moorthumb}
           hoverText="'Moor"
           alt="'Moor"
-          linkTo="selectedworks/moor"
+          linkTo="moor"
           hoverBackground="rgba(232,39,102,0.9)"
         />
         <Thumbnail
           src={piecesthumb}
           hoverText="Pieces of Her"
           alt="Pieces of Her"
-          linkTo="selectedworks/piecesofher"
+          linkTo="piecesofher"
           hoverBackground="rgba(160,188,219,0.9)"
         />
       </ProjectSection>
