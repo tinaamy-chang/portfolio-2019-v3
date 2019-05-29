@@ -89,7 +89,7 @@ const IndexPage = () => {
             Adobe Illustrator is my partner in crime.
           </p>
           <p>
-            This website was developed using ReactJS & GithubJS.{' '}
+            This website was developed using ReactJS & GatsbyJS.{' '}
             <GitHubLink
               href={'https://github.com/tinaamy-chang/tinastunas.com'}
             >
