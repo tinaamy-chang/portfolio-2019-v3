@@ -16,8 +16,8 @@ import TopNav from '../components/TopNav';
 import withOmelette from '../withOmelette';
 
 const PictureHolder = styled('div')`
-  max-width: 29em;
-  padding: 0em 5em;
+  max-width: 27em;
+  padding: 0em 3.3em;
   margin: 0em 0.5em 0em 4.1em;
   margin-bottom: 1px;
 
@@ -49,6 +49,7 @@ const IntroHeading = styled('h1')`
 const IntroInfo = styled('div')`
   font-weight: 300;
   color: white;
+  margin-top: 0;
 `;
 
 const ProjectSection = styled('div')`
@@ -77,16 +78,18 @@ const IndexPage = () => {
         </PictureHolder>
         <IntroInfo>
           <IntroHeading>Hello, I am Tina Chang</IntroHeading>
+          <p>Frontend Developer at Bio-Rad Laboratories</p>
           <p>
             Visual Communications Design
             <br />
             San Francisco State University 2019
           </p>
+
           <p>
-            Passionate about UI, UX, Branding, and Graphics. I design for work
-            and leisure.
-            <br />
-            Adobe Illustrator is my partner in crime.
+            Passionate about frontend development combined with UI, UX, and
+            Graphics.
+            <br />I design and develop for work and leisure. Adobe Illustrator
+            is my partner in crime.
           </p>
           <p>
             This website was developed using ReactJS & GatsbyJS.{' '}

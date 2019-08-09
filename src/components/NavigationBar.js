@@ -4,7 +4,7 @@ import { Link, withPrefix } from 'gatsby';
 
 const NavBar = styled('ul')`
   font-weight: 300;
-  padding: 2em 0 0 ${props => (props.noLeftPadding ? '0' : '5em')};
+  padding: 0.4em 0 0 ${props => (props.noLeftPadding ? '0' : '5em')};
   margin: 0;
   display: flex;
   color: white;
